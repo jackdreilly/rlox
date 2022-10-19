@@ -1,0 +1,20 @@
+TokenDebug {
+    content: "1",
+    line: 1,
+    token_type: Number,
+}
+TokenDebug {
+    content: "-",
+    line: 1,
+    token_type: Minus,
+}
+TokenDebug {
+    content: "2",
+    line: 1,
+    token_type: Number,
+}
+TokenDebug {
+    content: "",
+    line: 1,
+    token_type: EndOfFile,
+}

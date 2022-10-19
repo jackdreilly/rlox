@@ -1,0 +1,170 @@
+TokenDebug {
+    content: "fun",
+    line: 2,
+    token_type: Fun,
+}
+TokenDebug {
+    content: "fib",
+    line: 2,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "(",
+    line: 2,
+    token_type: LeftParen,
+}
+TokenDebug {
+    content: "n",
+    line: 2,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: ")",
+    line: 2,
+    token_type: RightParen,
+}
+TokenDebug {
+    content: "{",
+    line: 2,
+    token_type: LeftBrace,
+}
+TokenDebug {
+    content: "if",
+    line: 3,
+    token_type: If,
+}
+TokenDebug {
+    content: "(",
+    line: 3,
+    token_type: LeftParen,
+}
+TokenDebug {
+    content: "n",
+    line: 3,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: " <",
+    line: 3,
+    token_type: Less,
+}
+TokenDebug {
+    content: "2",
+    line: 3,
+    token_type: Number,
+}
+TokenDebug {
+    content: ")",
+    line: 3,
+    token_type: RightParen,
+}
+TokenDebug {
+    content: "{",
+    line: 3,
+    token_type: LeftBrace,
+}
+TokenDebug {
+    content: "return",
+    line: 4,
+    token_type: Return,
+}
+TokenDebug {
+    content: "1",
+    line: 4,
+    token_type: Number,
+}
+TokenDebug {
+    content: ";",
+    line: 4,
+    token_type: Semicolon,
+}
+TokenDebug {
+    content: "}",
+    line: 5,
+    token_type: RightBrace,
+}
+TokenDebug {
+    content: "return",
+    line: 6,
+    token_type: Return,
+}
+TokenDebug {
+    content: "fib",
+    line: 6,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "(",
+    line: 6,
+    token_type: LeftParen,
+}
+TokenDebug {
+    content: "n",
+    line: 6,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "-",
+    line: 6,
+    token_type: Minus,
+}
+TokenDebug {
+    content: "1",
+    line: 6,
+    token_type: Number,
+}
+TokenDebug {
+    content: ")",
+    line: 6,
+    token_type: RightParen,
+}
+TokenDebug {
+    content: "+",
+    line: 6,
+    token_type: Plus,
+}
+TokenDebug {
+    content: "fib",
+    line: 6,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "(",
+    line: 6,
+    token_type: LeftParen,
+}
+TokenDebug {
+    content: "n",
+    line: 6,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "-",
+    line: 6,
+    token_type: Minus,
+}
+TokenDebug {
+    content: "2",
+    line: 6,
+    token_type: Number,
+}
+TokenDebug {
+    content: ")",
+    line: 6,
+    token_type: RightParen,
+}
+TokenDebug {
+    content: ";",
+    line: 6,
+    token_type: Semicolon,
+}
+TokenDebug {
+    content: "}",
+    line: 7,
+    token_type: RightBrace,
+}
+TokenDebug {
+    content: "",
+    line: 7,
+    token_type: EndOfFile,
+}
