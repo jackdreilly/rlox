@@ -1,0 +1,790 @@
+TokenDebug {
+    content: "class",
+    line: 1,
+    token_type: Class,
+}
+TokenDebug {
+    content: "X",
+    line: 1,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "{",
+    line: 1,
+    token_type: LeftBrace,
+}
+TokenDebug {
+    content: "checking",
+    line: 2,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "(",
+    line: 2,
+    token_type: LeftParen,
+}
+TokenDebug {
+    content: "first",
+    line: 2,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: ",",
+    line: 2,
+    token_type: Comma,
+}
+TokenDebug {
+    content: "second",
+    line: 2,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: ")",
+    line: 2,
+    token_type: RightParen,
+}
+TokenDebug {
+    content: "{",
+    line: 2,
+    token_type: LeftBrace,
+}
+TokenDebug {
+    content: "if",
+    line: 3,
+    token_type: If,
+}
+TokenDebug {
+    content: "(",
+    line: 3,
+    token_type: LeftParen,
+}
+TokenDebug {
+    content: "first",
+    line: 3,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "<=",
+    line: 3,
+    token_type: LessEqual,
+}
+TokenDebug {
+    content: "this",
+    line: 3,
+    token_type: This,
+}
+TokenDebug {
+    content: ".",
+    line: 3,
+    token_type: Dot,
+}
+TokenDebug {
+    content: "hello",
+    line: 3,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: ")",
+    line: 3,
+    token_type: RightParen,
+}
+TokenDebug {
+    content: "{",
+    line: 3,
+    token_type: LeftBrace,
+}
+TokenDebug {
+    content: "return",
+    line: 4,
+    token_type: Return,
+}
+TokenDebug {
+    content: "3.0",
+    line: 4,
+    token_type: Number,
+}
+TokenDebug {
+    content: "+",
+    line: 4,
+    token_type: Plus,
+}
+TokenDebug {
+    content: "21.12",
+    line: 4,
+    token_type: Number,
+}
+TokenDebug {
+    content: ";",
+    line: 4,
+    token_type: Semicolon,
+}
+TokenDebug {
+    content: "}",
+    line: 5,
+    token_type: RightBrace,
+}
+TokenDebug {
+    content: "else",
+    line: 5,
+    token_type: Else,
+}
+TokenDebug {
+    content: "{",
+    line: 5,
+    token_type: LeftBrace,
+}
+TokenDebug {
+    content: "return",
+    line: 6,
+    token_type: Return,
+}
+TokenDebug {
+    content: "asdf",
+    line: 6,
+    token_type: StringLiteral,
+}
+TokenDebug {
+    content: "+",
+    line: 6,
+    token_type: Plus,
+}
+TokenDebug {
+    content: "fdsa",
+    line: 6,
+    token_type: StringLiteral,
+}
+TokenDebug {
+    content: "}",
+    line: 7,
+    token_type: RightBrace,
+}
+TokenDebug {
+    content: "fun",
+    line: 8,
+    token_type: Fun,
+}
+TokenDebug {
+    content: "helper",
+    line: 8,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "(",
+    line: 8,
+    token_type: LeftParen,
+}
+TokenDebug {
+    content: "yo",
+    line: 8,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: ",",
+    line: 8,
+    token_type: Comma,
+}
+TokenDebug {
+    content: "bo",
+    line: 8,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: ")",
+    line: 8,
+    token_type: RightParen,
+}
+TokenDebug {
+    content: "{",
+    line: 8,
+    token_type: LeftBrace,
+}
+TokenDebug {
+    content: "return",
+    line: 9,
+    token_type: Return,
+}
+TokenDebug {
+    content: "yo",
+    line: 9,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "/",
+    line: 9,
+    token_type: Slash,
+}
+TokenDebug {
+    content: "(",
+    line: 9,
+    token_type: LeftParen,
+}
+TokenDebug {
+    content: "bo",
+    line: 9,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "*",
+    line: 9,
+    token_type: Star,
+}
+TokenDebug {
+    content: "yo",
+    line: 9,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: ")",
+    line: 9,
+    token_type: RightParen,
+}
+TokenDebug {
+    content: "+",
+    line: 9,
+    token_type: Plus,
+}
+TokenDebug {
+    content: "bo",
+    line: 9,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "-",
+    line: 9,
+    token_type: Minus,
+}
+TokenDebug {
+    content: "bo",
+    line: 9,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: ";",
+    line: 9,
+    token_type: Semicolon,
+}
+TokenDebug {
+    content: "}",
+    line: 10,
+    token_type: RightBrace,
+}
+TokenDebug {
+    content: "print",
+    line: 11,
+    token_type: Print,
+}
+TokenDebug {
+    content: "helper",
+    line: 11,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: ";",
+    line: 11,
+    token_type: Semicolon,
+}
+TokenDebug {
+    content: "while",
+    line: 12,
+    token_type: While,
+}
+TokenDebug {
+    content: "(",
+    line: 12,
+    token_type: LeftParen,
+}
+TokenDebug {
+    content: "first",
+    line: 12,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "<",
+    line: 12,
+    token_type: Less,
+}
+TokenDebug {
+    content: "second",
+    line: 12,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: ")",
+    line: 12,
+    token_type: RightParen,
+}
+TokenDebug {
+    content: "{",
+    line: 12,
+    token_type: LeftBrace,
+}
+TokenDebug {
+    content: "var",
+    line: 13,
+    token_type: Var,
+}
+TokenDebug {
+    content: "x",
+    line: 13,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "=",
+    line: 13,
+    token_type: Equal,
+}
+TokenDebug {
+    content: "234",
+    line: 13,
+    token_type: Number,
+}
+TokenDebug {
+    content: ";",
+    line: 13,
+    token_type: Semicolon,
+}
+TokenDebug {
+    content: "second",
+    line: 14,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "=",
+    line: 14,
+    token_type: Equal,
+}
+TokenDebug {
+    content: "x",
+    line: 14,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: ";",
+    line: 14,
+    token_type: Semicolon,
+}
+TokenDebug {
+    content: "}",
+    line: 15,
+    token_type: RightBrace,
+}
+TokenDebug {
+    content: "first",
+    line: 16,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "<",
+    line: 16,
+    token_type: Less,
+}
+TokenDebug {
+    content: "3",
+    line: 16,
+    token_type: Number,
+}
+TokenDebug {
+    content: ";",
+    line: 16,
+    token_type: Semicolon,
+}
+TokenDebug {
+    content: "first",
+    line: 17,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: ">",
+    line: 17,
+    token_type: Greater,
+}
+TokenDebug {
+    content: "3",
+    line: 17,
+    token_type: Number,
+}
+TokenDebug {
+    content: ";",
+    line: 17,
+    token_type: Semicolon,
+}
+TokenDebug {
+    content: "first",
+    line: 18,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "<=",
+    line: 18,
+    token_type: LessEqual,
+}
+TokenDebug {
+    content: "3",
+    line: 18,
+    token_type: Number,
+}
+TokenDebug {
+    content: ";",
+    line: 18,
+    token_type: Semicolon,
+}
+TokenDebug {
+    content: "first",
+    line: 19,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: ">=",
+    line: 19,
+    token_type: GreaterEqual,
+}
+TokenDebug {
+    content: "3",
+    line: 19,
+    token_type: Number,
+}
+TokenDebug {
+    content: ";",
+    line: 19,
+    token_type: Semicolon,
+}
+TokenDebug {
+    content: "first",
+    line: 20,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "!=",
+    line: 20,
+    token_type: BangEqual,
+}
+TokenDebug {
+    content: "3",
+    line: 20,
+    token_type: Number,
+}
+TokenDebug {
+    content: ";",
+    line: 20,
+    token_type: Semicolon,
+}
+TokenDebug {
+    content: "first",
+    line: 21,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "==",
+    line: 21,
+    token_type: EqualEqual,
+}
+TokenDebug {
+    content: "3",
+    line: 21,
+    token_type: Number,
+}
+TokenDebug {
+    content: ";",
+    line: 21,
+    token_type: Semicolon,
+}
+TokenDebug {
+    content: "first",
+    line: 22,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "==",
+    line: 22,
+    token_type: EqualEqual,
+}
+TokenDebug {
+    content: "nil",
+    line: 22,
+    token_type: Nil,
+}
+TokenDebug {
+    content: "or",
+    line: 22,
+    token_type: Or,
+}
+TokenDebug {
+    content: "first",
+    line: 22,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "==",
+    line: 22,
+    token_type: EqualEqual,
+}
+TokenDebug {
+    content: "true",
+    line: 22,
+    token_type: True,
+}
+TokenDebug {
+    content: "and",
+    line: 22,
+    token_type: And,
+}
+TokenDebug {
+    content: "first",
+    line: 22,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "==",
+    line: 22,
+    token_type: EqualEqual,
+}
+TokenDebug {
+    content: "false",
+    line: 22,
+    token_type: False,
+}
+TokenDebug {
+    content: ";",
+    line: 22,
+    token_type: Semicolon,
+}
+TokenDebug {
+    content: "for",
+    line: 23,
+    token_type: For,
+}
+TokenDebug {
+    content: "(",
+    line: 23,
+    token_type: LeftParen,
+}
+TokenDebug {
+    content: "var",
+    line: 23,
+    token_type: Var,
+}
+TokenDebug {
+    content: "i",
+    line: 23,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "=",
+    line: 23,
+    token_type: Equal,
+}
+TokenDebug {
+    content: "0",
+    line: 23,
+    token_type: Number,
+}
+TokenDebug {
+    content: ";",
+    line: 23,
+    token_type: Semicolon,
+}
+TokenDebug {
+    content: "i",
+    line: 23,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "<",
+    line: 23,
+    token_type: Less,
+}
+TokenDebug {
+    content: "10",
+    line: 23,
+    token_type: Number,
+}
+TokenDebug {
+    content: ";",
+    line: 23,
+    token_type: Semicolon,
+}
+TokenDebug {
+    content: "i",
+    line: 23,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "=",
+    line: 23,
+    token_type: Equal,
+}
+TokenDebug {
+    content: "i",
+    line: 23,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "+",
+    line: 23,
+    token_type: Plus,
+}
+TokenDebug {
+    content: "1",
+    line: 23,
+    token_type: Number,
+}
+TokenDebug {
+    content: ")",
+    line: 23,
+    token_type: RightParen,
+}
+TokenDebug {
+    content: "{",
+    line: 23,
+    token_type: LeftBrace,
+}
+TokenDebug {
+    content: "print",
+    line: 24,
+    token_type: Print,
+}
+TokenDebug {
+    content: "i",
+    line: 24,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "}",
+    line: 25,
+    token_type: RightBrace,
+}
+TokenDebug {
+    content: "}",
+    line: 26,
+    token_type: RightBrace,
+}
+TokenDebug {
+    content: "}",
+    line: 27,
+    token_type: RightBrace,
+}
+TokenDebug {
+    content: "class",
+    line: 28,
+    token_type: Class,
+}
+TokenDebug {
+    content: "Y",
+    line: 28,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "<",
+    line: 28,
+    token_type: Less,
+}
+TokenDebug {
+    content: "X",
+    line: 28,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "{",
+    line: 28,
+    token_type: LeftBrace,
+}
+TokenDebug {
+    content: "checking",
+    line: 29,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "(",
+    line: 29,
+    token_type: LeftParen,
+}
+TokenDebug {
+    content: "first",
+    line: 29,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: ",",
+    line: 29,
+    token_type: Comma,
+}
+TokenDebug {
+    content: "second",
+    line: 29,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: ")",
+    line: 29,
+    token_type: RightParen,
+}
+TokenDebug {
+    content: "{",
+    line: 29,
+    token_type: LeftBrace,
+}
+TokenDebug {
+    content: "return",
+    line: 30,
+    token_type: Return,
+}
+TokenDebug {
+    content: "super",
+    line: 30,
+    token_type: Super,
+}
+TokenDebug {
+    content: ".",
+    line: 30,
+    token_type: Dot,
+}
+TokenDebug {
+    content: "checking",
+    line: 30,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: "(",
+    line: 30,
+    token_type: LeftParen,
+}
+TokenDebug {
+    content: "first",
+    line: 30,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: ",",
+    line: 30,
+    token_type: Comma,
+}
+TokenDebug {
+    content: "second",
+    line: 30,
+    token_type: Identifier,
+}
+TokenDebug {
+    content: ")",
+    line: 30,
+    token_type: RightParen,
+}
+TokenDebug {
+    content: ";",
+    line: 30,
+    token_type: Semicolon,
+}
+TokenDebug {
+    content: "}",
+    line: 31,
+    token_type: RightBrace,
+}
+TokenDebug {
+    content: "}",
+    line: 32,
+    token_type: RightBrace,
+}
+TokenDebug {
+    content: "",
+    line: 32,
+    token_type: EndOfFile,
+}

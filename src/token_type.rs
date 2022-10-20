@@ -1,6 +1,6 @@
 use strum_macros::Display;
 
-#[derive(Debug, Display, PartialEq)]
+#[derive(Debug, Display, PartialEq, Clone, Copy)]
 pub enum TokenType {
     EndOfFile,
     Identifier,
@@ -41,4 +41,5 @@ pub enum TokenType {
     This,
     Var,
     While,
+    ErrorToken,
 }

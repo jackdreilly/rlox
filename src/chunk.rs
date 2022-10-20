@@ -1,6 +1,5 @@
 // Strum contains all the trait definitions
 use num_enum::{IntoPrimitive, TryFromPrimitive};
-use std::convert::TryInto;
 use strum_macros::Display;
 
 #[derive(IntoPrimitive, TryFromPrimitive, Display, PartialEq)]
@@ -57,51 +56,6 @@ impl Chunk {
             lines: vec![],
         }
     }
-    fn disassemble(&self, description: &str) {
-        println!("== {} ==", description);
-        let mut offset: usize = 0;
-        while offset < self.code.len() {
-            offset = self.disassemble_instruction(offset);
-        }
-    }
-    pub fn disassemble_instruction(&self, offset: usize) -> usize {
-        print!("{:04} ", offset);
-        if offset > 0 && self.get_line(offset) == self.get_line(offset - 1) {
-            print!("   | ");
-        } else {
-            print!("{:4} ", self.get_line(offset));
-        }
-        let op_code = self.code[offset].try_into().unwrap();
-        match op_code {
-            OpCode::Constant => self.disassemble_constant(offset),
-            OpCode::ConstantLong => self.disassemble_constant_long(offset),
-            _ => self.simple_instruction(op_code.to_string().as_str(), offset),
-        }
-    }
-    fn simple_instruction(&self, value: &str, offset: usize) -> usize {
-        println!("{}", value);
-        return offset + 1;
-    }
-    fn disassemble_constant(&self, offset: usize) -> usize {
-        let constant_offset = self.code[offset + 1];
-        print!("{:16} {:4} '", OpCode::Constant, constant_offset,);
-        self.print_value(&self.constants[constant_offset as usize]);
-        print!("'\n");
-        return offset + 2;
-    }
-    fn disassemble_constant_long(&self, offset: usize) -> usize {
-        let constant_offset =
-            ((((self.code[offset + 1] as usize) << 8) + (self.code[offset + 2] as usize)) << 8)
-                + self.code[offset + 3] as usize;
-        print!("{:16} {:12} '", OpCode::ConstantLong, constant_offset);
-        self.print_value(&self.constants[constant_offset]);
-        print!("'\n");
-        return offset + 4;
-    }
-
-    fn print_value(&self, value: &Value) {
-        print!("{:?}", value);
-    }
 
     pub fn write_op_code(&mut self, op_code: OpCode, line: Line) {
         self.write_code(op_code.into(), line);
@@ -110,10 +64,10 @@ impl Chunk {
         self.code.push(code);
         self.lines.put(line);
     }
-    fn get_line(&self, line: Line) -> Line {
+    pub(crate) fn get_line(&self, line: Line) -> Line {
         self.lines.get(line)
     }
-    pub fn write_constant(&mut self, value: Value, line: Line) {
+    pub(crate)  fn write_constant(&mut self, value: Value, line: Line) {
         let constant_offset = self.put_constant(value);
         if constant_offset < u8::MAX.into() {
             self.write_op_code(OpCode::Constant, line);
@@ -176,6 +130,6 @@ mod tests {
         for n in 0..260 {
             chunk.write_constant(n as f64 * 2.0, (n as f64).sqrt().floor() as usize);
         }
-        chunk.disassemble("howdy");
+        assert!(chunk.lines.len() < 20);
     }
 }

@@ -32,7 +32,9 @@ impl VM {
             #[cfg(debug_assertions)]
             match pair {
                 Some((offset, _)) => {
-                    chunk.disassemble_instruction(offset);
+                    // TODO: Add back
+                    // chunk.disassemble_instruction(offset);
+                    println!("Offset {}", offset);
                     print!("          ");
                     println!("=====");
                     println!("stack");

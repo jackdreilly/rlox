@@ -1,0 +1,32 @@
+class X {
+    checking(first, second) {
+        if (first <= this.hello) {
+            return 3.0 + 21.12;
+        } else {
+            return "asdf" + "fdsa"
+        }
+        fun helper(yo, bo) {
+            return yo / (bo * yo) + bo - bo;
+        }
+        print helper;
+        while (first < second) {
+            var x = 234;
+            second = x;
+        }
+        first < 3;
+        first > 3;
+        first <= 3;
+        first >= 3;
+        first != 3;
+        first == 3;
+        first == nil or first == true and first == false;
+        for (var i = 0; i < 10; i = i + 1) {
+            print i
+        }
+    }
+}
+class Y < X {
+    checking(first, second) {
+        return super.checking(first, second);
+    }
+}

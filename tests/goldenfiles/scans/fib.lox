@@ -44,7 +44,7 @@ TokenDebug {
     token_type: Identifier,
 }
 TokenDebug {
-    content: " <",
+    content: "<",
     line: 3,
     token_type: Less,
 }

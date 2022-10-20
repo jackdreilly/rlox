@@ -8,7 +8,7 @@ use super::{
     token_type::TokenType::{self, *},
 };
 
-trait Scannable {
+pub(crate) trait Scannable {
     fn scanner(&self) -> Scanner;
 }
 
@@ -24,7 +24,7 @@ impl Scannable for &str {
     }
 }
 
-struct Scanner<'a> {
+pub(crate) struct Scanner<'a> {
     string: &'a str,
     iter: Peekable<Enumerate<Chars<'a>>>,
     line_count: LineNo,
@@ -65,15 +65,24 @@ impl<'a> Iterator for Scanner<'a> {
                 })
             };
         }
-        let mut double = |yes: TokenType, no: TokenType| {
-            let (char_count, next_char) = self.iter.next().unwrap();
-            self.char_count = char_count;
-            Some(Token {
-                content: &self.string[char_count - 2..char_count],
-                line: self.line_count,
-                token_type: if next_char == '=' { yes } else { no },
-            })
-        };
+        macro_rules! double {
+            ($yes:ident, $no:ident) => {
+                Some(if self.peek() == '=' {
+                    self.iter.next();
+                    Token {
+                        content: &self.string[char_count..char_count + 2],
+                        line: self.line_count,
+                        token_type: $yes,
+                    }
+                } else {
+                    Token {
+                        content: &self.string[char_count..char_count + 1],
+                        line: self.line_count,
+                        token_type: $no,
+                    }
+                })
+            };
+        }
         fn is_lead_identifier(c: char) -> bool {
             c.is_alphabetic() || c == '_'
         }
@@ -115,7 +124,7 @@ impl<'a> Iterator for Scanner<'a> {
                 single!(Slash)
             }
             '"' => {
-                let start = self.char_count;
+                let start = self.char_count + 1;
                 while self.peek() != '"' {
                     if self.iter.next().unwrap().1 == '\n' {
                         self.line_count += 1;
@@ -128,11 +137,10 @@ impl<'a> Iterator for Scanner<'a> {
                     token_type: StringLiteral,
                 })
             }
-
-            '!' => double(BangEqual, Bang),
-            '=' => double(EqualEqual, Equal),
-            '<' => double(LessEqual, Less),
-            '>' => double(GreaterEqual, Greater),
+            '!' => double!(BangEqual, Bang),
+            '=' => double!(EqualEqual, Equal),
+            '<' => double!(LessEqual, Less),
+            '>' => double!(GreaterEqual, Greater),
             ' ' | '\t' | '\r' => self.next(),
             '\n' => {
                 self.line_count += 1;
